@@ -76,7 +76,7 @@ def on_click(event):
     AtPointM = poly.transform(AtPoint_df)
     y_pred = model.predict(AtPointM)
     aarsnedbor = sum(y_pred)
-    gjennomsnitt = np.mean(y_pred)  # 🔴 ny linje – finn gjennomsnitt
+    gjennomsnitt = np.mean(y_pred)  # finner gjennomsnitt
 
     # Oppdaterer graf og kartet
     axGraph.cla()
